@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Link Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 flex items-center justify-center min-h-screen">
+    <!-- Login Form Container -->
+    <main class="bg-white shadow-2xl rounded-lg p-8 w-full max-w-sm">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Welcome Back!</h2>
+        <p class="text-center text-gray-500 mb-4">Please log in to continue</p>
+        <form id="login-form" class="space-y-6">
+            <!-- Email Input -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    class="mt-2 p-3 w-full border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300 focus:border-indigo-500"
+                    placeholder="Enter your email" 
+                    required>
+            </div>
+            <!-- Password Input -->
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    class="mt-2 p-3 w-full border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300 focus:border-indigo-500"
+                    placeholder="Enter your password" 
+                    required>
+            </div>
+            <!-- Submit Button -->
+            <button 
+                type="submit" 
+                class="w-full bg-gradient-to-r from-indigo-500 to-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:shadow-lg transform transition hover:scale-105 focus:outline-none focus:ring focus:ring-indigo-400">
+                Login
+            </button>
+        </form>
+
+        <!-- Links -->
+        <p class="text-center text-sm text-gray-600 mt-6">
+            Don't have an account? 
+            <a href="register.html" class="text-indigo-600 font-semibold hover:underline">Register</a>
+        </p>
+    </main>
+
+    <!-- JavaScript File -->
+    <script src="script/app.js"></script>
+</body>
+</html>
